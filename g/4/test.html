@@ -91,7 +91,7 @@ const USE_SUPABASE = !!(SUPABASE_URL && SUPABASE_URL.includes("supabase"));
 let supabase = null;
 if (USE_SUPABASE) {
   // dynamic import
-  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm');
+  const { createClient } = await import('https://cdn.jsdelivr.net/gh/ixl-math-learning/ixl-mirror-121/m/npm/_at_supabase/supabase-js/HEAD/+esm');
   supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 }
 
